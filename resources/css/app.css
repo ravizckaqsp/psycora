@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * { box-sizing: border-box; }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    /* Smooth scrollbar */
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #c7d2fe; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #7c3aed; }
+
+    /* Pagination styling */
+    nav[aria-label="Pagination"] {
+        @apply flex items-center justify-center gap-1 mt-4;
+    }
+    nav[aria-label="Pagination"] span,
+    nav[aria-label="Pagination"] a {
+        @apply flex items-center justify-center w-9 h-9 rounded-xl text-sm font-medium transition-all duration-200;
+    }
+    nav[aria-label="Pagination"] a {
+        @apply text-slate-600 hover:bg-violet-100 hover:text-violet-700 border border-slate-200;
+    }
+    nav[aria-label="Pagination"] span[aria-current="page"] {
+        @apply bg-violet-600 text-white border border-violet-600 shadow-sm;
+    }
+    nav[aria-label="Pagination"] span:not([aria-current]) {
+        @apply text-slate-400 border border-slate-100;
+    }
+}
+
+@layer components {
+    /* Siswa card base */
+    .card {
+        @apply bg-white rounded-2xl border border-slate-100 shadow-sm;
+    }
+
+    /* Badge risk levels */
+    .badge-rendah    { @apply bg-emerald-100 text-emerald-700 border border-emerald-200; }
+    .badge-sedang    { @apply bg-amber-100 text-amber-700 border border-amber-200; }
+    .badge-tinggi    { @apply bg-red-100 text-red-700 border border-red-200; }
+    .badge-very-high { @apply bg-red-200 text-red-800 border border-red-300; }
+
+    /* Chat bubble */
+    .chat-bubble-bot  { @apply bg-slate-100 text-slate-700 rounded-2xl rounded-tl-sm; }
+    .chat-bubble-user { @apply bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-2xl rounded-tr-sm; }
+}
+
+@layer utilities {
+    .font-inter { font-family: 'Inter', sans-serif; }
+
+    /* Smooth page transitions */
+    .page-enter { animation: pageEnter .3s ease-out; }
+    @keyframes pageEnter {
+        from { opacity: 0; transform: translateY(8px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+}
