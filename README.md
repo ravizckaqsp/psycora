@@ -11,7 +11,7 @@
 
 **Psycora** adalah platform berbasis web interaktif yang dirancang khusus untuk memantau kondisi psikososial serta mendeteksi tingkat ketergantungan gawai (gadget addiction) pada remaja secara mandiri (*kuesioner mandiri*). 
 
-Melalui pendekatan preventif terintegrasi, platform ini menggabungkan **tiga instrumen penilaian klinis terpercaya** ke dalam satu sesi kuesioner terpadu, didukung oleh visualisasi data analitis (*Business Intelligence*) untuk Guru Bimbingan Konseling (BK), dan chatbot interaktif berbasis **LLM Gemini** untuk memberikan edukasi kesehatan mental dan manajemen waktu secara langsung kepada siswa.
+Melalui pendekatan preventif terintegrasi, platform ini menggabungkan **tiga instrumen penilaian klinis terpercaya** ke dalam satu sesi kuesioner terpadu, didukung oleh visualisasi data analitis (*Business Intelligence*) untuk Guru Bimbingan Konseling (BK), dan chatbot interaktif berbasis Rule-based Classification untuk memberikan edukasi kesehatan mental dan manajemen waktu secara langsung kepada siswa.
 
 Tujuan utama sistem ini adalah mendeteksi tanda-tanda gangguan perilaku sejak dini agar Guru BK atau pihak sekolah dapat mengambil tindakan pencegahan (*preventif*) yang tepat sebelum berkembang menjadi gangguan klinis yang lebih serius.
 
@@ -29,7 +29,7 @@ Siswa bertindak sebagai subjek utama yang memantau kondisi kesehatan psikososial
   - **PSC-17 (Pediatric Symptom Checklist-17):** Screening kondisi psikososial kognitif, emosi, dan atensi.
   - **SAS-SV (Smartphone Addiction Scale - Short Version):** Mengukur tingkat kecenderungan ketergantungan gawai.
 - **Klasifikasi Risiko Otomatis:** Setelah pengisian, sistem menghitung skor secara otomatis dan menampilkan tingkat risiko siswa dengan empat kategori: **Risiko Rendah**, **Sedang**, **Tinggi**, dan **Sangat Tinggi**.
-- **Chatbot Edukatif (LLM Gemini):** Fitur interaktif untuk berdialog mengenai penggunaan gawai yang sehat, kiat manajemen waktu, dan regulasi emosi.
+- **Chatbot Edukatif:** Fitur interaktif untuk berdialog mengenai penggunaan gawai yang sehat, kiat manajemen waktu, dan regulasi emosi.
 - **Tampilan Dashboard Siswa:**
   - Skor ringkasan hasil penilaian psikososial terakhir.
   - Indikator tingkat intensitas penggunaan gawai.
